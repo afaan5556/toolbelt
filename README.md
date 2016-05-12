@@ -24,7 +24,7 @@ Using the app users will be able to:
 * rate tools
 
 ## Schema
-![Schema](tool-belt-schema.PNG)
+![Schema](tool-belt-schema.png)
 
 
 ## Page List
