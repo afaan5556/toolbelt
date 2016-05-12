@@ -24,8 +24,20 @@ Using the app users will be able to:
 * rate tools
 
 ## Schema
+![Schema](/tool-belt-schema.PNG)
 
 
 ## Page List
+0.0 Login
+0.1 Signup
+1.0 Home page
+2.1 Tool results - list view
+2.2 Tool results - map view
+2.3 & 3.2 Chat page
+2.4 Flag user form
+3.1 My ToolBelt
+4.1 My messages
+4.2 My account
+
 
 
