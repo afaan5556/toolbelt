@@ -16,7 +16,6 @@
 		09D55A2C1CE7B81500EEE324 /* ToolBeltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A2B1CE7B81500EEE324 /* ToolBeltUITests.swift */; };
 		09D55A3A1CE7BC7400EEE324 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A391CE7BC7400EEE324 /* UserProfileController.swift */; };
 		09D55A3C1CE7C51300EEE324 /* AddEditAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A3B1CE7C51300EEE324 /* AddEditAddressController.swift */; };
-		09D55A3E1CE7C9A900EEE324 /* AssEditName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A3D1CE7C9A900EEE324 /* AssEditName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		09D55A2D1CE7B81500EEE324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D55A391CE7BC7400EEE324 /* UserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		09D55A3B1CE7C51300EEE324 /* AddEditAddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditAddressController.swift; sourceTree = "<group>"; };
-		09D55A3D1CE7C9A900EEE324 /* AssEditName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssEditName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +105,6 @@
 				09D55A0D1CE7B81500EEE324 /* HomeController.swift */,
 				09D55A391CE7BC7400EEE324 /* UserProfileController.swift */,
 				09D55A3B1CE7C51300EEE324 /* AddEditAddressController.swift */,
-				09D55A3D1CE7C9A900EEE324 /* AssEditName.swift */,
 				09D55A0F1CE7B81500EEE324 /* Main.storyboard */,
 				09D55A121CE7B81500EEE324 /* Assets.xcassets */,
 				09D55A141CE7B81500EEE324 /* LaunchScreen.storyboard */,
@@ -266,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D55A0E1CE7B81500EEE324 /* HomeController.swift in Sources */,
-				09D55A3E1CE7C9A900EEE324 /* AssEditName.swift in Sources */,
 				09D55A0C1CE7B81500EEE324 /* AppDelegate.swift in Sources */,
 				09D55A3C1CE7C51300EEE324 /* AddEditAddressController.swift in Sources */,
 				09D55A3A1CE7BC7400EEE324 /* UserProfileController.swift in Sources */,
