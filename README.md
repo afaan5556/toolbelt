@@ -19,25 +19,31 @@ Using the app users will be able to:
 * list tools they own
 * search for tools they need
 * communicate with each other to arrange the borrowing of tools
-* rate lenders
+* rate lenders/tools
 * rate borrowers
-* rate tools
 
 ## Schema
 ![Schema](tool-belt-schema.png)
 
+### SCHEMA UPDATES NOT REFLECTED ABOVE
+* Remove stationary_portable column in tool table
+* Remove comment in flags table
+* Swap tool type for tool title in tool table
+
 
 ## Page List
-* 0.0 Login
-* 0.1 Signup
+* 0.0 Login (OAUTH)
+* 0.1 Signup (OAUTH)
 * 1.0 Home page
+* 1.1 Add street address
 * 2.1 Tool results - list view
 * 2.2 Tool results - map view
 * 2.3 & 3.2 Chat page
 * 2.4 Flag user form
 * 3.1 My ToolBelt
-* 4.1 My messages
-* 4.2 My account
+* 3.2 Add tool
+* 3.3 My messages
+* 3.4 My account
 
 
 
