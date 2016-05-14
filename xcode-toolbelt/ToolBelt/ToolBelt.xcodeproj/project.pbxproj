@@ -16,6 +16,10 @@
 		09D55A2C1CE7B81500EEE324 /* ToolBeltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A2B1CE7B81500EEE324 /* ToolBeltUITests.swift */; };
 		09D55A3A1CE7BC7400EEE324 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A391CE7BC7400EEE324 /* UserProfileController.swift */; };
 		09D55A3C1CE7C51300EEE324 /* AddEditAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A3B1CE7C51300EEE324 /* AddEditAddressController.swift */; };
+		09D55A401CE7D51600EEE324 /* AddToolController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A3F1CE7D51600EEE324 /* AddToolController.swift */; };
+		09D55A421CE7D9D200EEE324 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A411CE7D9D200EEE324 /* Tool.swift */; };
+		09D55A481CE7DD9400EEE324 /* ToolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A471CE7DD9400EEE324 /* ToolTableViewCell.swift */; };
+		09D55A4E1CE7E49C00EEE324 /* ToolTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A4D1CE7E49C00EEE324 /* ToolTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		09D55A2D1CE7B81500EEE324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D55A391CE7BC7400EEE324 /* UserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		09D55A3B1CE7C51300EEE324 /* AddEditAddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditAddressController.swift; sourceTree = "<group>"; };
+		09D55A3F1CE7D51600EEE324 /* AddToolController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToolController.swift; sourceTree = "<group>"; };
+		09D55A411CE7D9D200EEE324 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		09D55A471CE7DD9400EEE324 /* ToolTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolTableViewCell.swift; sourceTree = "<group>"; };
+		09D55A4D1CE7E49C00EEE324 /* ToolTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToolTableViewController.swift; path = ../ToolTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +113,11 @@
 				09D55A0D1CE7B81500EEE324 /* HomeController.swift */,
 				09D55A391CE7BC7400EEE324 /* UserProfileController.swift */,
 				09D55A3B1CE7C51300EEE324 /* AddEditAddressController.swift */,
+				09D55A3F1CE7D51600EEE324 /* AddToolController.swift */,
+				09D55A471CE7DD9400EEE324 /* ToolTableViewCell.swift */,
+				09D55A4D1CE7E49C00EEE324 /* ToolTableViewController.swift */,
 				09D55A0F1CE7B81500EEE324 /* Main.storyboard */,
+				09D55A411CE7D9D200EEE324 /* Tool.swift */,
 				09D55A121CE7B81500EEE324 /* Assets.xcassets */,
 				09D55A141CE7B81500EEE324 /* LaunchScreen.storyboard */,
 				09D55A171CE7B81500EEE324 /* Info.plist */,
@@ -265,6 +277,10 @@
 				09D55A0E1CE7B81500EEE324 /* HomeController.swift in Sources */,
 				09D55A0C1CE7B81500EEE324 /* AppDelegate.swift in Sources */,
 				09D55A3C1CE7C51300EEE324 /* AddEditAddressController.swift in Sources */,
+				09D55A481CE7DD9400EEE324 /* ToolTableViewCell.swift in Sources */,
+				09D55A421CE7D9D200EEE324 /* Tool.swift in Sources */,
+				09D55A4E1CE7E49C00EEE324 /* ToolTableViewController.swift in Sources */,
+				09D55A401CE7D51600EEE324 /* AddToolController.swift in Sources */,
 				09D55A3A1CE7BC7400EEE324 /* UserProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +508,7 @@
 				09D55A321CE7B81500EEE324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09D55A331CE7B81500EEE324 /* Build configuration list for PBXNativeTarget "ToolBeltTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +517,7 @@
 				09D55A351CE7B81500EEE324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09D55A361CE7B81500EEE324 /* Build configuration list for PBXNativeTarget "ToolBeltUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +526,7 @@
 				09D55A381CE7B81500EEE324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
