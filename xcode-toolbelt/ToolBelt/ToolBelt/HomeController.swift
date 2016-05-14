@@ -10,7 +10,7 @@ import UIKit
 
 class HomeController: UIViewController {
     
-    // Outlets
+    // UI Outlets
     
     @IBOutlet weak var toolSearchBar: UISearchBar!
     
