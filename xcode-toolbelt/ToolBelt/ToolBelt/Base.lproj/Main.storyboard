@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZxE-cB-0YT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tsV-Qx-7HF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -74,129 +74,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1377" y="479"/>
-        </scene>
-        <!--Tool Table View Controller-->
-        <scene sceneID="REU-C3-uyh">
-            <objects>
-                <tableViewController id="ZxE-cB-0YT" customClass="ToolTableViewController" customModule="ToolBelt" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="VLO-Jj-0lG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ToolTableViewCell" rowHeight="90" id="m80-En-7Sn" customClass="ToolTableViewCell" customModule="ToolBelt" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="90"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m80-En-7Sn" id="6AO-WE-ZMy">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drill" translatesAutoresizingMaskIntoConstraints="NO" id="kkg-8g-qJC">
-                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUr-H5-sAw">
-                                            <rect key="frame" x="98" y="8" width="494" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ga-9z-gKy" customClass="UITextView">
-                                            <rect key="frame" x="98" y="37" width="240" height="45"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="toolDescription" destination="3ga-9z-gKy" id="S0E-RD-3j4"/>
-                                    <outlet property="toolImage" destination="kkg-8g-qJC" id="kTY-Iq-Gwn"/>
-                                    <outlet property="toolTitle" destination="VUr-H5-sAw" id="K2U-t8-Cai"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ZxE-cB-0YT" id="UZ5-v9-m4h"/>
-                            <outlet property="delegate" destination="ZxE-cB-0YT" id="sEa-bT-S7c"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Og0-hg-c5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2147" y="479"/>
-        </scene>
-        <!--AddTool-->
-        <scene sceneID="TQY-3j-Uvv">
-            <objects>
-                <viewController title="AddTool" id="6TO-MT-sdh" customClass="AddToolController" customModule="ToolBelt" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="N4G-ZR-K5a"/>
-                        <viewControllerLayoutGuide type="bottom" id="2Xj-vW-PbU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yTu-G2-6M2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hN4-oX-J6v">
-                                <rect key="frame" x="35" y="285" width="530" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LSO-Hk-fgP">
-                                <rect key="frame" x="35" y="375" width="530" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a Tool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dci-JI-Zm4">
-                                <rect key="frame" x="35" y="203" width="109" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB3-xT-Nvl">
-                                <rect key="frame" x="35" y="249" width="38" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc5-7j-Ppm">
-                                <rect key="frame" x="35" y="333" width="93" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClB-St-B7E">
-                                <rect key="frame" x="500" y="432" width="65" height="30"/>
-                                <state key="normal" title="Add Tool!"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ClB-St-B7E" firstAttribute="top" secondItem="LSO-Hk-fgP" secondAttribute="bottom" constant="27" id="B5x-t1-tbE"/>
-                            <constraint firstItem="LSO-Hk-fgP" firstAttribute="top" secondItem="hN4-oX-J6v" secondAttribute="bottom" constant="60" id="BPj-76-Xyw"/>
-                            <constraint firstItem="ClB-St-B7E" firstAttribute="trailing" secondItem="LSO-Hk-fgP" secondAttribute="trailing" id="Cux-ew-5w3"/>
-                            <constraint firstItem="hN4-oX-J6v" firstAttribute="centerX" secondItem="yTu-G2-6M2" secondAttribute="centerX" id="GLM-1I-osy"/>
-                            <constraint firstItem="LSO-Hk-fgP" firstAttribute="centerX" secondItem="yTu-G2-6M2" secondAttribute="centerX" id="KxN-Jt-5p3"/>
-                            <constraint firstItem="hN4-oX-J6v" firstAttribute="centerY" secondItem="yTu-G2-6M2" secondAttribute="centerY" id="Pff-8V-7O2"/>
-                            <constraint firstItem="IB3-xT-Nvl" firstAttribute="top" secondItem="Dci-JI-Zm4" secondAttribute="bottom" constant="18" id="b3e-yc-8qF"/>
-                            <constraint firstItem="LSO-Hk-fgP" firstAttribute="width" secondItem="hN4-oX-J6v" secondAttribute="width" id="be5-lE-izU"/>
-                            <constraint firstItem="hN4-oX-J6v" firstAttribute="leading" secondItem="yTu-G2-6M2" secondAttribute="leadingMargin" constant="15" id="d8W-i5-a8F"/>
-                            <constraint firstItem="oc5-7j-Ppm" firstAttribute="top" secondItem="hN4-oX-J6v" secondAttribute="bottom" constant="18" id="gzg-1a-Vuh"/>
-                            <constraint firstItem="LSO-Hk-fgP" firstAttribute="top" secondItem="hN4-oX-J6v" secondAttribute="bottom" constant="60" id="mDD-NL-s7o"/>
-                            <constraint firstItem="Dci-JI-Zm4" firstAttribute="leading" secondItem="hN4-oX-J6v" secondAttribute="leading" id="o4P-qb-jEo"/>
-                            <constraint firstItem="IB3-xT-Nvl" firstAttribute="leading" secondItem="hN4-oX-J6v" secondAttribute="leading" id="od2-Ag-hxr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hN4-oX-J6v" secondAttribute="trailing" constant="15" id="qNH-0r-zEq"/>
-                            <constraint firstItem="hN4-oX-J6v" firstAttribute="top" secondItem="Dci-JI-Zm4" secondAttribute="bottom" constant="54" id="rFk-wQ-7nj"/>
-                            <constraint firstItem="oc5-7j-Ppm" firstAttribute="leading" secondItem="hN4-oX-J6v" secondAttribute="leading" id="ynL-KG-bfJ"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="addToolDescription" destination="LSO-Hk-fgP" id="hP5-AI-85b"/>
-                        <outlet property="addToolSubmitButton" destination="ClB-St-B7E" id="Cu5-bQ-AqB"/>
-                        <outlet property="addToolTitle" destination="hN4-oX-J6v" id="99Y-he-gSn"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yf7-T1-7FF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1938" y="2308"/>
         </scene>
         <!--MyProfile-->
         <scene sceneID="bnQ-Jd-skq">
@@ -358,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7Y-SQ-TKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1377" y="1469"/>
+            <point key="canvasLocation" x="1377" y="1219"/>
         </scene>
         <!--AddEditAddress-->
         <scene sceneID="dIT-3G-Fbl">
@@ -425,9 +302,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nv5-bB-o8S">
                                 <rect key="frame" x="501" y="481" width="59" height="30"/>
                                 <state key="normal" title="Add/Edit"/>
-                                <connections>
-                                    <segue destination="d0R-tr-0Ws" kind="show" id="xB5-V7-2dy"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -470,7 +344,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZY-RK-JYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2322" y="1469"/>
+            <point key="canvasLocation" x="2135" y="1710"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bnf-9R-OXY">
@@ -491,10 +365,4 @@
             <point key="canvasLocation" x="585" y="756"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="drill" width="512" height="512"/>
-    </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="jbk-Ha-GbM"/>
-    </inferredMetricsTieBreakers>
 </document>
