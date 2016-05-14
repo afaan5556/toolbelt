@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tsV-Qx-7HF">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeController" customModule="ToolBelt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="5Yu-KV-GeC">
+                                <rect key="frame" x="35" y="111" width="530" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tool Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V50-zH-Bsl">
+                                <rect key="frame" x="243" y="74" width="115" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuX-RV-TsJ">
+                                <rect key="frame" x="248" y="221" width="105" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="My ToolBelt"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lju-cg-GTx">
+                                <rect key="frame" x="238" y="282" width="124" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="My Messages"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EB5-hg-3S2">
+                                <rect key="frame" x="256" y="343" width="89" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="My Profile"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lju-cg-GTx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1fd-Na-jXi"/>
+                            <constraint firstItem="EB5-hg-3S2" firstAttribute="top" secondItem="lju-cg-GTx" secondAttribute="bottom" constant="25" id="3hp-Cr-7XO"/>
+                            <constraint firstItem="5Yu-KV-GeC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Fj-Pu-c8V"/>
+                            <constraint firstItem="V50-zH-Bsl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DwK-wv-Di7"/>
+                            <constraint firstItem="lju-cg-GTx" firstAttribute="top" secondItem="uuX-RV-TsJ" secondAttribute="bottom" constant="25" id="OfS-15-brJ"/>
+                            <constraint firstItem="V50-zH-Bsl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="V9v-00-w5y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Yu-KV-GeC" secondAttribute="trailing" constant="15" id="ZXX-0S-nma"/>
+                            <constraint firstItem="EB5-hg-3S2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="acy-66-euI"/>
+                            <constraint firstItem="5Yu-KV-GeC" firstAttribute="top" secondItem="V50-zH-Bsl" secondAttribute="bottom" constant="10" id="agm-ly-HnG"/>
+                            <constraint firstItem="lju-cg-GTx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bY4-gm-JIb"/>
+                            <constraint firstItem="uuX-RV-TsJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cyy-hf-GHh"/>
+                            <constraint firstItem="5Yu-KV-GeC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="ryq-yF-hDi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="svR-3m-ywO"/>
+                    <connections>
+                        <outlet property="myMessages" destination="lju-cg-GTx" id="lQu-rk-Pko"/>
+                        <outlet property="myProfile" destination="EB5-hg-3S2" id="1hu-GA-vK1"/>
+                        <outlet property="myToolBelt" destination="uuX-RV-TsJ" id="9yX-jz-vEE"/>
+                        <outlet property="toolSearchBar" destination="5Yu-KV-GeC" id="eM9-nz-2Zh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1377" y="479"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bnf-9R-OXY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tsV-Qx-7HF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hE2-X8-SSj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Eew-Vv-CQx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEJ-uP-aDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="1139"/>
+        </scene>
+    </scenes>
+</document>
