@@ -17,6 +17,11 @@
 		09D55A2C1CE7B81500EEE324 /* ToolBeltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A2B1CE7B81500EEE324 /* ToolBeltUITests.swift */; };
 		09D55A3A1CE7BC7400EEE324 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A391CE7BC7400EEE324 /* UserProfileController.swift */; };
 		09D55A3C1CE7C51300EEE324 /* AddEditAddressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D55A3B1CE7C51300EEE324 /* AddEditAddressController.swift */; };
+		93AA4EF3B8F713E29701D0EF /* Pods_ToolBelt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA5D0DF93C9DA748A5733DF /* Pods_ToolBelt.framework */; };
+		BD7186801CE7F7B4003FEE74 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD71867F1CE7F7B4003FEE74 /* Map.swift */; };
+		BD9105DE1CE7D24B0058165D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9105DC1CE7D24B0058165D /* FBSDKCoreKit.framework */; };
+		BD9105DF1CE7D24B0058165D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9105DD1CE7D24B0058165D /* FBSDKLoginKit.framework */; };
+		BD9105E51CE7D47B0058165D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9105E41CE7D47B0058165D /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 		09D55A2D1CE7B81500EEE324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D55A391CE7BC7400EEE324 /* UserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		09D55A3B1CE7C51300EEE324 /* AddEditAddressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditAddressController.swift; sourceTree = "<group>"; };
+		3B08A1B1182E8A686452710B /* Pods-ToolBelt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolBelt.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToolBelt/Pods-ToolBelt.release.xcconfig"; sourceTree = "<group>"; };
+		4AA5D0DF93C9DA748A5733DF /* Pods_ToolBelt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolBelt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		659C04E7478677E786AF5BF4 /* Pods-ToolBelt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolBelt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToolBelt/Pods-ToolBelt.debug.xcconfig"; sourceTree = "<group>"; };
+		BD71867F1CE7F7B4003FEE74 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Map.swift; path = ../Map.swift; sourceTree = "<group>"; };
+		BD9105DC1CE7D24B0058165D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		BD9105DD1CE7D24B0058165D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		BD9105E01CE7D29A0058165D /* ToolBelt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToolBelt-Bridging-Header.h"; sourceTree = "<group>"; };
+		BD9105E41CE7D47B0058165D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9105DF1CE7D24B0058165D /* FBSDKLoginKit.framework in Frameworks */,
+				BD9105DE1CE7D24B0058165D /* FBSDKCoreKit.framework in Frameworks */,
+				93AA4EF3B8F713E29701D0EF /* Pods_ToolBelt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +103,8 @@
 				09D55A1F1CE7B81500EEE324 /* ToolBeltTests */,
 				09D55A2A1CE7B81500EEE324 /* ToolBeltUITests */,
 				09D55A091CE7B81500EEE324 /* Products */,
+				1765432D56E27B2331A55FAD /* Pods */,
+				B4E469C4993640B104C46837 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,7 +121,11 @@
 		09D55A0A1CE7B81500EEE324 /* ToolBelt */ = {
 			isa = PBXGroup;
 			children = (
+				BD9105DC1CE7D24B0058165D /* FBSDKCoreKit.framework */,
+				BD9105DD1CE7D24B0058165D /* FBSDKLoginKit.framework */,
 				09D55A0B1CE7B81500EEE324 /* AppDelegate.swift */,
+				BD71867F1CE7F7B4003FEE74 /* Map.swift */,
+				BD9105E41CE7D47B0058165D /* ViewController.swift */,
 				09D55A0D1CE7B81500EEE324 /* HomeController.swift */,
 				09D55A391CE7BC7400EEE324 /* UserProfileController.swift */,
 				09D55A3B1CE7C51300EEE324 /* AddEditAddressController.swift */,
@@ -116,6 +138,7 @@
 				09D55A121CE7B81500EEE324 /* Assets.xcassets */,
 				09D55A141CE7B81500EEE324 /* LaunchScreen.storyboard */,
 				09D55A171CE7B81500EEE324 /* Info.plist */,
+				BD9105E01CE7D29A0058165D /* ToolBelt-Bridging-Header.h */,
 			);
 			path = ToolBelt;
 			sourceTree = "<group>";
@@ -138,6 +161,23 @@
 			path = ToolBeltUITests;
 			sourceTree = "<group>";
 		};
+		1765432D56E27B2331A55FAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				659C04E7478677E786AF5BF4 /* Pods-ToolBelt.debug.xcconfig */,
+				3B08A1B1182E8A686452710B /* Pods-ToolBelt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4E469C4993640B104C46837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AA5D0DF93C9DA748A5733DF /* Pods_ToolBelt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09D55A301CE7B81500EEE324 /* Build configuration list for PBXNativeTarget "ToolBelt" */;
 			buildPhases = (
+				272595A430CB1A6D58C6F4FC /* 📦 Check Pods Manifest.lock */,
 				09D55A041CE7B81500EEE324 /* Sources */,
 				09D55A051CE7B81500EEE324 /* Frameworks */,
 				09D55A061CE7B81500EEE324 /* Resources */,
+				47A36C32E6FF75DFA85F845D /* 📦 Embed Pods Frameworks */,
+				CBF35F40C4EC752ECAE62B4A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,14 +308,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		272595A430CB1A6D58C6F4FC /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		47A36C32E6FF75DFA85F845D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToolBelt/Pods-ToolBelt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBF35F40C4EC752ECAE62B4A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToolBelt/Pods-ToolBelt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		09D55A041CE7B81500EEE324 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9105E51CE7D47B0058165D /* ViewController.swift in Sources */,
 				09D55A0E1CE7B81500EEE324 /* HomeController.swift in Sources */,
 				09D55A0C1CE7B81500EEE324 /* AppDelegate.swift in Sources */,
 				09D55A3C1CE7C51300EEE324 /* AddEditAddressController.swift in Sources */,
+				BD7186801CE7F7B4003FEE74 /* Map.swift in Sources */,
 				09D55A3A1CE7BC7400EEE324 /* UserProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,23 +508,38 @@
 		};
 		09D55A311CE7B81500EEE324 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 659C04E7478677E786AF5BF4 /* Pods-ToolBelt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ToolBelt",
+				);
 				INFOPLIST_FILE = ToolBelt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dbc.ToolBelt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToolBelt/ToolBelt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		09D55A321CE7B81500EEE324 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B08A1B1182E8A686452710B /* Pods-ToolBelt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ToolBelt",
+				);
 				INFOPLIST_FILE = ToolBelt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dbc.ToolBelt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToolBelt/ToolBelt-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -500,6 +608,7 @@
 				09D55A321CE7B81500EEE324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09D55A331CE7B81500EEE324 /* Build configuration list for PBXNativeTarget "ToolBeltTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +617,7 @@
 				09D55A351CE7B81500EEE324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09D55A361CE7B81500EEE324 /* Build configuration list for PBXNativeTarget "ToolBeltUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +626,7 @@
 				09D55A381CE7B81500EEE324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
