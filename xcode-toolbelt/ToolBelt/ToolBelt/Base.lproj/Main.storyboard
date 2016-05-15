@@ -344,7 +344,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZY-RK-JYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2135" y="1710"/>
+=======
+            <point key="canvasLocation" x="2448" y="1203"/>
+>>>>>>> swift01
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bnf-9R-OXY">
@@ -365,4 +369,13 @@
             <point key="canvasLocation" x="585" y="756"/>
         </scene>
     </scenes>
+<<<<<<< HEAD
+=======
+    <resources>
+        <image name="drill" width="512" height="512"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xB5-V7-2dy"/>
+    </inferredMetricsTieBreakers>
+>>>>>>> swift01
 </document>
