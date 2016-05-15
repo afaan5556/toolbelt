@@ -10,29 +10,33 @@ import MapKit
 import Alamofire
 
 
+
+
+
 class Map: UIViewController {
-    
-    
-    
+
+
+
     func getLatandLong() {Alamofire.request(.GET, "http://localhost:3000") .responseJSON { response in
     if let JSON = response.result.value {
 
         print("\(JSON)")
+
         
+            }
         }
-    }
     }
 
     @IBOutlet var map: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("hey")
         getLatandLong()
-        
+
         var latitude:CLLocationDegrees = 1.001
         
-        var longitude:CLLocationDegrees = 1.003
+        var longitude:CLLocationDegrees = 1.001
         
         var latDelta:CLLocationDegrees = 0.05
         
