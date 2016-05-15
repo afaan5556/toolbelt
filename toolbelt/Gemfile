@@ -26,6 +26,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+#Geokit
+gem 'geokit'
+
+#Use Mechanize to require all gems throughout your app
+gem 'mechanize'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
