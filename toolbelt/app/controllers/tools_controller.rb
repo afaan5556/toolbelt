@@ -14,6 +14,7 @@ class ToolsController < ApplicationController
       render json: {message: "Tool created successfully"}
     else
       render json: {message: "Attempt unsuccesful"}
+    end
   end
 
 
