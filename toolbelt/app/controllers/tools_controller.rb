@@ -8,9 +8,10 @@ class ToolsController < ApplicationController
 
   def create
     puts params
-    Tool.create(user_id: params[:user_id], title: params[:title], description: params[:description])
-    tools = Tool.all
-    render json: tools
+    if Tool.create(user_id: params[:user_id], title: params[:title], description: params[:description])
+      render json: {message: "Tool created successfully"}
+    else
+      render json: {message: "Attempt unsuccesful"}
   end
 
 
