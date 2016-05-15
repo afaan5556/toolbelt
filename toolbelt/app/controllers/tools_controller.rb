@@ -1,8 +1,10 @@
 class ToolsController < ApplicationController
   def index
-    user = User.find(params[:user_id])
-    tools = user.tools
-    render json: tools
+    # user = User.find(params[:user_id])
+    # tools = user.tools
+    # render json: tools
+
+    render json: {latitude: 34.0522, longitude: -118.2437}
   end
 
   def create

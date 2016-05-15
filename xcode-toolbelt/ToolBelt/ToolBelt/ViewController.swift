@@ -10,6 +10,7 @@ import UIKit
 
 
 
+
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     
@@ -30,8 +31,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         if let token = FBSDKAccessToken.currentAccessToken(){
             fetchProfile()
         }
-        
-        
+    
     }
     
     func fetchProfile(){
@@ -45,19 +45,19 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             }
             
             if error != nil{
-                print(error)
+//                print(error)
                 return
             }
             
             if let email = result["email"] as? String {
-                print(email)
+//                print(email)
             }
             
             if let picture = result["picture"] as? NSDictionary, data = picture["data"] as? NSDictionary, url = data["url"] as? String {
-                print(url)
+//                print(url)
             }
             
-            print(result)
+//            print(result)
         }
     }
     
@@ -72,7 +72,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-        print("completed login")
+//        print("completed login")
     }
     
     func loginButtonWillLogin(loginButton: FBSDKLoginButton!) -> Bool {

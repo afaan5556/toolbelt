@@ -11,16 +11,28 @@ import Alamofire
 
 
 class Map: UIViewController {
+    
+    
+    
+    func getLatandLong() {Alamofire.request(.GET, "http://localhost:3000") .responseJSON { response in
+    if let JSON = response.result.value {
+
+        print("\(JSON)")
+        
+        }
+    }
+    }
 
     @IBOutlet var map: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getLatandLong()
         
-        var latitude:CLLocationDegrees = 43.095181
+        var latitude:CLLocationDegrees = 1.001
         
-        var longitude:CLLocationDegrees = -79.006424
+        var longitude:CLLocationDegrees = 1.003
         
         var latDelta:CLLocationDegrees = 0.05
         
@@ -36,19 +48,19 @@ class Map: UIViewController {
         
     }
     
-    func annotate() {
-        
-        var annotation = MKPointAnnotation()
-        
-        annotation.coordinate = location
-        
-        annotation.title = "Niagra Falls"
-        
-        annotation.subtitle = "One day..."
-        
-        map.addAnnotation(annotation)
-    
-    }
+//    func annotate() {
+//        
+//        var annotation = MKPointAnnotation()
+//        
+//        annotation.coordinate = location
+//        
+//        annotation.title = "Niagra Falls"
+//        
+//        annotation.subtitle = "One day..."
+//        
+//        map.addAnnotation(annotation)
+//    
+//    }
     
 
 }
