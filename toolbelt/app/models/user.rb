@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
 
   has_many :tools
 
-  validates :first_name, :last_name, :email, :street_address_1, :city, :state, :zip, :password_digest, :latitude, :longitude, presence: true
+  validates :first_name, :last_name, :email, presence: true
   validates :state, length: {maximum: 2}
   validates :email, uniqueness: true
 end
